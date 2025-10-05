@@ -1,0 +1,11 @@
+2025-10-05 14:33:35,419 - INFO - Database initialized
+2025-10-05 14:33:35,420 - ERROR - Failed to start server: [Errno 98] Address already in use
+2025-10-05 14:33:53,975 - INFO - Database initialized
+2025-10-05 14:33:53,975 - ERROR - Failed to start server: [Errno 98] Address already in use
+2025-10-05 14:34:24,426 - INFO - Database initialized
+2025-10-05 14:34:24,427 - ERROR - Failed to start server: [Errno 98] Address already in use
+2025-10-05 14:34:36,125 - INFO - Database initialized
+2025-10-05 14:34:36,125 - INFO - C2 Server started on 192.168.100.2:4445
+2025-10-05 14:35:02,875 - INFO - New connection from 172.18.0.2:50190
+2025-10-05 14:35:21,556 - ERROR - Error in command handler: 'C2Server' object has no attribute 'list_active_agents'
+2025-10-05 14:36:06,081 - INFO - New connection from 172.18.0.2:50201

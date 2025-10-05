@@ -1,0 +1,95 @@
+2025-10-05 13:01:37,271 - INFO - Database initialized
+2025-10-05 13:01:37,272 - INFO - C2 Server started on 0.0.0.0:4444
+2025-10-05 13:01:42,656 - INFO - New connection from 127.0.0.1:46768
+2025-10-05 13:02:04,636 - INFO - Database initialized
+2025-10-05 13:02:04,636 - INFO - C2 Server started on 0.0.0.0:4444
+2025-10-05 13:02:14,583 - INFO - New connection from 127.0.0.1:38544
+2025-10-05 13:02:27,882 - INFO - Database initialized
+2025-10-05 13:02:27,882 - INFO - C2 Server started on 0.0.0.0:4444
+2025-10-05 13:02:35,762 - INFO - New connection from 127.0.0.1:45590
+2025-10-05 13:02:40,714 - INFO - Database initialized
+2025-10-05 13:02:40,715 - ERROR - Failed to start server: [Errno 98] Address already in use
+2025-10-05 13:02:47,527 - INFO - Database initialized
+2025-10-05 13:02:47,527 - INFO - C2 Server started on 0.0.0.0:4444
+2025-10-05 13:02:55,093 - INFO - New connection from 127.0.0.1:38704
+2025-10-05 13:05:23,299 - INFO - New connection from 127.0.0.1:43968
+2025-10-05 13:05:25,137 - INFO - New agent registered: 6ec27dfe-89ac-478b-8430-331894fc47b0
+2025-10-05 13:07:42,659 - INFO - New connection from 127.0.0.1:33028
+2025-10-05 13:07:44,594 - INFO - New agent registered: a9ce2589-7f83-48d8-ad82-8985b1c18d54
+2025-10-05 13:08:07,465 - INFO - Created job eefc4fbd-4fb2-4b62-8faa-c116e4dac596 for agent 6ec27dfe
+2025-10-05 13:10:11,912 - INFO - New connection from 127.0.0.1:35334
+2025-10-05 13:10:13,360 - INFO - New agent registered: 242bba7b-f21d-4f99-ab58-d0b06c47974e
+2025-10-05 13:17:59,409 - INFO - Database initialized
+2025-10-05 13:17:59,409 - INFO - C2 Server started on 0.0.0.0:4444
+2025-10-05 13:18:06,917 - INFO - New connection from 127.0.0.1:33566
+2025-10-05 13:21:51,879 - INFO - Database initialized
+2025-10-05 13:21:51,881 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:01:43,010 - INFO - New connection from 172.18.0.2:49866
+2025-10-05 14:01:43,102 - INFO - New agent registered: 06b6ef0f-523f-4495-889f-66a7f683c288
+2025-10-05 14:05:22,544 - ERROR - Error handling agent 06b6ef0f-523f-4495-889f-66a7f683c288: [Errno 104] Connection reset by peer
+2025-10-05 14:05:22,877 - INFO - New connection from 172.18.0.2:49906
+2025-10-05 14:05:24,043 - INFO - New connection from 172.18.0.2:49910
+2025-10-05 14:05:27,552 - ERROR - Error updating agent status: database is locked
+2025-10-05 14:05:27,552 - ERROR - Error registering agent: Recursive use of cursors not allowed.
+2025-10-05 14:06:34,290 - INFO - Database initialized
+2025-10-05 14:06:34,290 - ERROR - Failed to start server: [Errno 99] Cannot assign requested address
+2025-10-05 14:06:39,726 - INFO - Database initialized
+2025-10-05 14:06:39,727 - ERROR - Failed to start server: [Errno 99] Cannot assign requested address
+2025-10-05 14:06:45,159 - INFO - Database initialized
+2025-10-05 14:06:45,160 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:06:52,378 - INFO - Database initialized
+2025-10-05 14:06:52,378 - ERROR - Failed to start server: [Errno 99] Cannot assign requested address
+2025-10-05 14:07:01,221 - INFO - Database initialized
+2025-10-05 14:07:01,221 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:07:06,986 - INFO - New connection from 172.18.0.2:49955
+2025-10-05 14:07:07,060 - INFO - New agent registered: 9937b33a-8593-445f-a4ae-d742848adf17
+2025-10-05 14:07:09,108 - ERROR - Error handling agent 9937b33a-8593-445f-a4ae-d742848adf17: [Errno 104] Connection reset by peer
+2025-10-05 14:07:09,321 - INFO - New connection from 172.18.0.2:49956
+2025-10-05 14:07:09,377 - INFO - New agent registered: beaae068-4994-4dc4-a159-291b24ff8ee0
+2025-10-05 14:10:17,576 - INFO - Database initialized
+2025-10-05 14:10:17,576 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 14:10:18,271 - INFO - New connection from 127.0.0.1:37724
+2025-10-05 14:13:28,872 - INFO - Database initialized
+2025-10-05 14:13:28,872 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:13:32,195 - INFO - New connection from 172.18.0.2:50017
+2025-10-05 14:13:32,260 - INFO - New agent registered: caf0cca4-4ac4-4dde-af01-181034249fe3
+2025-10-05 14:13:50,091 - INFO - Database initialized
+2025-10-05 14:13:50,092 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:13:50,468 - INFO - New connection from 172.18.0.2:50019
+2025-10-05 14:13:50,536 - INFO - New agent registered: 653e00c4-76d4-4116-a730-7250732e4930
+2025-10-05 14:14:00,301 - INFO - New connection from 172.18.0.2:50020
+2025-10-05 14:14:00,393 - INFO - New agent registered: f2f259bf-f14e-46b6-bc7b-76800b6a4382
+2025-10-05 14:14:04,107 - ERROR - Error handling agent f2f259bf-f14e-46b6-bc7b-76800b6a4382: [Errno 104] Connection reset by peer
+2025-10-05 14:14:48,669 - INFO - New connection from 172.18.0.2:50029
+2025-10-05 14:14:48,671 - ERROR - Error registering agent: UNIQUE constraint failed: agents.id
+2025-10-05 14:14:48,671 - INFO - New agent registered: caf0cca4-4ac4-4dde-af01-181034249fe3
+2025-10-05 14:20:39,678 - INFO - New connection from 172.18.0.2:50074
+2025-10-05 14:21:07,906 - INFO - Shutting down C2 server...
+2025-10-05 14:21:13,575 - INFO - Database initialized
+2025-10-05 14:21:13,575 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 14:21:17,946 - INFO - New connection from 172.18.0.2:50081
+2025-10-05 14:22:10,161 - INFO - New connection from 172.18.0.2:50084
+2025-10-05 14:22:10,171 - ERROR - Error registering agent: UNIQUE constraint failed: agents.id
+2025-10-05 14:22:10,172 - INFO - New agent registered: caf0cca4-4ac4-4dde-af01-181034249fe3
+2025-10-05 14:22:10,178 - INFO - New connection from 172.18.0.2:50085
+2025-10-05 14:22:10,181 - ERROR - Error registering agent: UNIQUE constraint failed: agents.id
+2025-10-05 14:22:10,182 - INFO - New agent registered: 653e00c4-76d4-4116-a730-7250732e4930
+2025-10-05 17:32:56,374 - INFO - Database initialized
+2025-10-05 17:32:56,375 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 17:46:05,794 - INFO - Database initialized
+2025-10-05 17:46:05,795 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 17:46:54,116 - INFO - Shutting down C2 server...
+2025-10-05 18:23:26,887 - INFO - Database initialized
+2025-10-05 18:23:26,888 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 18:23:53,383 - INFO - Shutting down C2 server...
+2025-10-05 19:31:06,452 - INFO - Database initialized
+2025-10-05 19:31:06,452 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 19:31:29,974 - INFO - Shutting down C2 server...
+2025-10-05 19:31:32,779 - INFO - Database initialized
+2025-10-05 19:31:32,780 - INFO - C2 Server started on 192.168.100.2:4444
+2025-10-05 19:32:17,490 - INFO - Shutting down C2 server...
+2025-10-05 19:32:21,092 - INFO - Database initialized
+2025-10-05 19:32:21,092 - INFO - C2 Server started on 127.0.0.1:4444
+2025-10-05 19:32:24,722 - INFO - New connection from 127.0.0.1:60452
+2025-10-05 19:32:26,045 - INFO - New agent registered: 138f3fd7-fae0-4e7b-ab3f-78719d01eb03
+2025-10-05 19:32:43,186 - INFO - Shutting down C2 server...

